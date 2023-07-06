@@ -1,0 +1,33 @@
+:root {
+  // colors
+  --primaryColor: #f0bd72;
+  --secondaryColor: #5d4b24;
+  --bgColor1: #34353a;
+  --basicWhite: white;
+  --halfWhite: rgba(255, 255, 255, 0.8);
+
+}
+
+// fonts-sizes
+$xsFont: 0.75rem;
+$msFont: 0.875rem;
+$sFont: 1rem;
+$mmFont: 1.125rem;
+$mFont: 1.25rem;
+$lFont: 1.5rem;
+$xlFont: 1.75rem;
+$xxlFont: 2rem;
+
+body,
+button,
+input {
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  cursor: pointer;
+
+  &:hover {
+    scale: 1.05;
+  }
+}

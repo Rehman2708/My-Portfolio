@@ -1,0 +1,72 @@
+@import "../../styles/global.scss";
+
+.nameImage {
+    height: calc(100vh - 123px);
+    background-color: var(--bgColor1);
+    position: relative;
+
+    .myDetailsDiv {
+        position: absolute;
+        left: 150px;
+        top: 25%;
+        color: var(--basicWhite);
+
+        .detailHeader {
+            font-weight: 400;
+        }
+
+        .detailName {
+            font-size: 3rem;
+            font-weight: 600;
+            color: var(--primaryColor);
+            font-family: serif;
+        }
+
+        .detailWork {
+            font-weight: 400;
+        }
+
+        .detailButton {
+            border: 3px solid var(--primaryColor);
+            border-radius: 5px;
+            padding: 10px 15px;
+            background-color: transparent;
+            color: var(--primaryColor);
+            outline: none;
+            margin-top: 10px;
+            font-size: $mmFont;
+            font-weight: 500;
+        }
+    }
+
+    .myImage {
+        height: 100%;
+        width: 45%;
+        position: absolute;
+        bottom: 0;
+        right: 60px;
+    }
+
+    .socialIcons {
+        position: absolute;
+        right: 100px;
+        bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+
+        .straightLine {
+            height: 100px;
+            width: 2px;
+            background-color: var(--primaryColor);
+        }
+
+        .socialIcon {
+            height: 24px;
+            width: 24px;
+            color: var(--basicWhite);
+        }
+    }
+}

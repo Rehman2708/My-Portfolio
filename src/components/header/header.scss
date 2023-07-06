@@ -1,0 +1,62 @@
+@import "../../styles/global.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  background-color: var(--bgColor1);
+
+
+  .headerH1 {
+    font-size: $xxlFont;
+    font-weight: 700;
+    color: var(--primaryColor);
+  }
+
+  &>:first-child {
+    width: 17%;
+    text-align: start;
+  }
+
+  .headerOptions {
+    display: flex;
+    gap: 20px;
+
+    .headerOptionButton {
+      background-color: transparent;
+      border: none;
+      color: var(--basicWhite);
+      font-size: $mmFont;
+
+      &:hover {
+        scale: 1.1;
+      }
+    }
+  }
+
+  .headerInputDiv {
+    background-color: var(--secondaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0 20px;
+    color: var(--halfWhite);
+
+    .headerInput {
+      width: 150px;
+      height: 35px;
+      background-color: var(--secondaryColor);
+      border: none;
+      font-size: $sFont;
+      outline: none;
+      color: var(--basicWhite);
+
+      &::placeholder {
+        color: var(--halfWhite);
+      }
+    }
+  }
+
+}

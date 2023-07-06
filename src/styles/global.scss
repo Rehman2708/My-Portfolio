@@ -2,7 +2,8 @@
   // colors
   --primaryColor: #f0bd72;
   --secondaryColor: #5d4b24;
-  --bgColor1: #34353a;
+  --bgColor1: #3d3f45;
+  --bgColor2: #2b2d35;
   --basicWhite: white;
   --halfWhite: rgba(255, 255, 255, 0.8);
 
@@ -30,4 +31,12 @@ button {
   &:hover {
     scale: 1.05;
   }
+}
+
+.headerText {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--basicWhite);
+  margin-top: 0;
+  white-space: nowrap;
 }

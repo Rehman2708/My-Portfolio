@@ -59,6 +59,7 @@
 
         .straightLine {
             height: 100px;
+            border-radius: 3px;
             width: 2px;
             background-color: var(--primaryColor);
         }
@@ -67,6 +68,10 @@
             height: 24px;
             width: 24px;
             color: var(--basicWhite);
+
+            &:hover {
+                scale: 1.1;
+            }
         }
     }
 }

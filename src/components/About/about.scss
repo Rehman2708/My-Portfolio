@@ -1,0 +1,30 @@
+@import "../../styles/global.scss";
+
+.about {
+    height: 35vh;
+    padding: 10%;
+    background-color: var(--bgColor2);
+    margin: 0;
+
+    .aboutData {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+        color: var(--basicWhite);
+
+        .straightLine {
+            width: 100px;
+            height: 3px;
+            background-color: var(--primaryColor);
+            display: flex;
+            align-items: flex-start;
+            border-radius: 3px;
+        }
+
+        .aboutPara {
+            margin-top: -10px;
+            line-height: 1.5;
+        }
+    }
+}

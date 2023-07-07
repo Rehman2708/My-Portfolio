@@ -1,0 +1,64 @@
+@import "../../styles//global.scss";
+
+.testimonial {
+    height: 60vh;
+    padding: 13% 10%;
+    background-color: var(--bgColor2);
+    position: relative;
+
+    .tRow {
+        display: flex;
+        gap: 50px;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .backBox {
+        height: 55%;
+        width: 40%;
+        background-color: var(--primaryColor);
+        position: absolute;
+        right: 0;
+        transform: translate(0%, -10%);
+        border-radius: 100px 0 0 100px;
+
+        .testimonialImg {
+            height: 150%;
+            width: 90%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border-radius: 0 0 0 40px;
+        }
+    }
+
+    .testimonialData {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+        color: var(--basicWhite);
+        width: 55%;
+        margin-top: 30px;
+
+        .straightLine {
+            width: 250px;
+            height: 3px;
+            background-color: var(--primaryColor);
+            display: flex;
+            align-items: flex-start;
+            border-radius: 3px;
+        }
+
+        .testimonialPara {
+            margin-top: -10px;
+            line-height: 1.5;
+
+            .testimonialAuthor {
+                font-size: $lFont;
+                font-family: $secondaryFont;
+            }
+        }
+    }
+}

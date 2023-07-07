@@ -5,6 +5,9 @@ import {
   BsWhatsapp,
   BsLinkedin,
   BsInstagram,
+  BsEnvelopeOpen,
+  BsFillMapFill,
+  BsFillTelephoneFill,
 } from "react-icons/bs";
 const contacts = () => {
   return (
@@ -14,6 +17,22 @@ const contacts = () => {
           <div className="straightLine"></div>
           <h1 className="headerText contactHead">Contact Me</h1>
           <div className="straightLine"></div>
+        </div>
+        <div className="contactsGrid">
+          <div className="gridRow1">
+            <div className="card1">
+              <BsEnvelopeOpen className="contactCardSvg" />
+              rehmanscholar321@gmail.com
+            </div>
+            <div className="card1">
+              <BsFillTelephoneFill className="contactCardSvg" />
+              +91 8286529560 | +91 9321145007
+            </div>
+          </div>
+          <div className="card1">
+            <BsFillMapFill className="contactCardSvg" />
+            Mumbai, Maharashtra, India
+          </div>
         </div>
         <div className="contactRow1 contactRow">
           <div className="straightLine"></div>

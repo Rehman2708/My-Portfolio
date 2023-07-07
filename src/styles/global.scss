@@ -5,7 +5,7 @@
   --bgColor1: #3d3f45;
   --bgColor2: #2b2d35;
   --basicWhite: white;
-  --halfWhite: rgba(255, 255, 255, 0.8);
+  --halfWhite: rgba(255, 255, 255, 0.7);
 
 }
 
@@ -25,6 +25,9 @@ input {
   font-family: "Montserrat", sans-serif;
 }
 
+$secondaryFont: serif;
+
+
 button {
   cursor: pointer;
 
@@ -39,4 +42,5 @@ button {
   color: var(--basicWhite);
   margin-top: 0;
   white-space: nowrap;
+  font-family: $secondaryFont;
 }

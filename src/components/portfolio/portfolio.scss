@@ -1,0 +1,67 @@
+.portfolio {
+    background-color: var(--bgColor2);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+
+    .portfolioHeader {
+        text-align: center;
+    }
+
+    .portfolioCards {
+        width: 75vw;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+
+        .portfolioCard {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: var(--bgColor1);
+            border-radius: 10px;
+            color: var(--basicWhite);
+            position: relative;
+
+            .portfolioName {
+                font-weight: 500;
+                display: none;
+
+                &:hover {
+                    display: block;
+                }
+            }
+
+            &:hover {
+                background-color: var(--primaryColor);
+
+                .portfolioName {
+                    display: block;
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-color: rgba(128, 128, 128, 0.6);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .portfolioImage {
+                height: 100%;
+                width: 100%;
+
+
+            }
+
+
+        }
+    }
+}

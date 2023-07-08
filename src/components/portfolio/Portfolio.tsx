@@ -45,7 +45,9 @@ const portfolioArray = [
 const Portfolio = () => {
   return (
     <div className="portfolio">
-      <h1 className="headerText portfolioHeader">Portfolio</h1>
+      <h1 className="headerText portfolioHeader" id="portfolio">
+        Portfolio
+      </h1>
       <div className="portfolioCards">
         {portfolioArray.map((ele: any, i: number) => (
           <div className="portfolioCard">

@@ -8,16 +8,23 @@
   background-color: var(--bgColor1);
 
 
-  .headerH1 {
-    font-size: $xxlFont;
-    font-weight: 700;
-    color: var(--primaryColor);
+  // .headerLogo {
+  //   font-size: $xxlFont;
+  //   font-weight: 700;
+  //   color: var(--primaryColor);
+  //   font-family: $secondaryFont;
+  // }
+
+  .logoImg {
+    height: 80%;
+    width: 80px;
+    margin: 0;
   }
 
-  &>:first-child {
-    width: 17%;
-    text-align: start;
-  }
+  // &>:first-child {
+  //   width: 17%;
+  //   text-align: start;
+  // }
 
   .headerOptions {
     display: flex;
@@ -28,6 +35,7 @@
       border: none;
       color: var(--basicWhite);
       font-size: $mmFont;
+      cursor: pointer;
 
       &:hover {
         scale: 1.1;

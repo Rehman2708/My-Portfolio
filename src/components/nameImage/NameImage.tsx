@@ -1,5 +1,6 @@
 import React from "react";
 import "./nameImage.scss";
+import { Link } from "react-scroll";
 import myImage from "../../assets/myImage1.png";
 import {
   BsFacebook,
@@ -17,7 +18,17 @@ const NameImage = () => {
           <span className="detailName"> Abdul Rehman</span>
         </h1>
         <h2 className="detailWork">FrontEnd Designer </h2>
-        <button className="detailButton">Contact Me</button>
+        <Link
+          className="headerOptionButton"
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={1300}
+        >
+          <button className="detailButton">Contact Me</button>
+        </Link>
       </div>
       <img className="myImage" src={myImage} alt="" />
       <div className="socialIcons">

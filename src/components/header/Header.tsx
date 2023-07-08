@@ -1,24 +1,49 @@
 import React, { useRef } from "react";
 import "./header.scss";
+import logo from "../../assets/logo.png";
 import { BsSearch } from "react-icons/bs";
-
+import { Link } from "react-scroll";
 const Header = () => {
   return (
     <div className="header">
-      <h1 className="headerH1">AR</h1>
+      {/* <h1 className="headerLogo"> */}
+      {/* AR */}
+      <img className="logoImg" src={logo} alt="" />
+      {/* </h1> */}
       <div className="headerOptions">
-        <button className="headerOptionButton">About</button>
-        <button className="headerOptionButton">Portfolio</button>
-        <button className="headerOptionButton">Contact</button>
+        <Link
+          className="headerOptionButton"
+          activeClass="active"
+          to="about"
+          smooth={true}
+          offset={-100}
+          duration={700}
+        >
+          About
+        </Link>
+        <Link
+          className="headerOptionButton"
+          activeClass="active"
+          to="portfolio"
+          smooth={true}
+          offset={-30}
+          duration={1000}
+        >
+          Portfolio
+        </Link>
+        <Link
+          className="headerOptionButton"
+          activeClass="active"
+          to="contact"
+          smooth={true}
+          offset={0}
+          duration={1300}
+        >
+          Contact
+        </Link>
       </div>
       <div className="headerInputDiv">
-        <input
-          className="headerInput"
-          placeholder="Search"
-          type="text"
-          name=""
-          id=""
-        />
+        <input className="headerInput" placeholder="Search" type="text" />
         <BsSearch />
       </div>
     </div>

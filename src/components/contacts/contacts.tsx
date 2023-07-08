@@ -9,30 +9,54 @@ import {
   BsFillMapFill,
   BsFillTelephoneFill,
 } from "react-icons/bs";
+const handleEmailClick = (email: string) => {
+  const mailtoLink = `mailto:${email}`;
+  window.location.href = mailtoLink;
+};
+
+const handlePhoneClick = (phoneNumber: string) => {
+  const telLink = `tel:${phoneNumber}`;
+  window.location.href = telLink;
+};
+
 const contacts = () => {
   return (
     <div className="contacts">
       <div className="contact">
         <div className="contactRow">
           <div className="straightLine"></div>
-          <h1 className="headerText contactHead">Contact Me</h1>
+          <h1 className="headerText contactHead" id="contact">
+            Contact Me
+          </h1>
           <div className="straightLine"></div>
         </div>
         <div className="contactsGrid">
           <div className="gridRow1">
-            <div className="card1">
-              <BsEnvelopeOpen className="contactCardSvg" />
-              rehmanscholar321@gmail.com
-            </div>
-            <div className="card1">
-              <BsFillTelephoneFill className="contactCardSvg" />
-              +91 8286529560 | +91 9321145007
-            </div>
+            <a
+              href={`rehmanscholar321@gmail.com`}
+              onClick={() => handleEmailClick("rehmanscholar321@gmail.com")}
+            >
+              <div className="card1">
+                <BsEnvelopeOpen className="contactCardSvg" />
+                rehmanscholar321@gmail.com
+              </div>
+            </a>
+            <a
+              href={`+91 8286529560`}
+              onClick={() => handlePhoneClick("+91 8286529560")}
+            >
+              <div className="card1">
+                <BsFillTelephoneFill className="contactCardSvg" />
+                +91 8286529560 | +91 9321145007
+              </div>
+            </a>
           </div>
-          <div className="card1">
-            <BsFillMapFill className="contactCardSvg" />
-            Mumbai, Maharashtra, India
-          </div>
+          <a href="https://goo.gl/maps/XZA8Q5WzJLXDxTAH6">
+            <div className="card1">
+              <BsFillMapFill className="contactCardSvg" />
+              Mumbai, Maharashtra, India
+            </div>
+          </a>
         </div>
         <div className="contactRow1 contactRow">
           <div className="straightLine"></div>

@@ -2,7 +2,7 @@
 
 .contacts {
     .contact {
-        height: 50vh;
+        height: 55vh;
         background-color: var(--bgColor1);
         position: relative;
 
@@ -21,13 +21,13 @@
             }
 
             .contactHead {
-                margin-top: -25px;
+                margin-top: -30px;
             }
         }
 
         .contactRow1 {
             position: absolute;
-            bottom: -48px;
+            bottom: -55px;
         }
 
         .socialIcons {
@@ -82,7 +82,7 @@
     }
 
     .gratitude {
-        height: 30vh;
+        height: 35vh;
         background-color: var(--bgColor2);
         display: flex;
         justify-content: center;

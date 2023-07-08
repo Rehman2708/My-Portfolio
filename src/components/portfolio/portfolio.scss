@@ -1,3 +1,5 @@
+@import "../../styles/global.scss";
+
 .portfolio {
     background-color: var(--bgColor2);
     height: fit-content;
@@ -12,15 +14,14 @@
     }
 
     .portfolioCards {
-        width: 75vw;
         display: grid;
         justify-content: center;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
 
         .portfolioCard {
-            width: 100%;
-            height: 100%;
+            width: 23vw;
+            height: 23vw;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -30,38 +31,62 @@
             color: var(--basicWhite);
             position: relative;
 
-            .portfolioName {
-                font-weight: 500;
+            .portfolioData {
                 display: none;
-
-                &:hover {
-                    display: block;
-                }
             }
 
             &:hover {
                 background-color: var(--primaryColor);
 
-                .portfolioName {
+                .portfolioData {
                     display: block;
+                    font-weight: 500;
                     position: absolute;
                     height: 100%;
                     width: 100%;
                     background-color: rgba(128, 128, 128, 0.6);
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
                     align-items: center;
+
+                    .portfolioName {
+                        font-size: $mFont;
+                        font-weight: 600;
+                        margin: 0;
+                        width: 80%;
+                        text-align: center;
+                        white-space: nowrap;
+                    }
+
+                    .portfolioIntro {
+                        font-size: $msFont;
+                        font-weight: 400;
+                        margin: 10px 0;
+                        width: 70%;
+                        text-align: center;
+                    }
+
+                    .portfolioButton {
+                        background-color: var(--primaryColor);
+                        border-radius: 5px;
+                        border: none;
+                        color: var(--bgColor1);
+                        font-size: $xsFont;
+                        padding: 5px 10px;
+                        font-weight: 600;
+                        display: flex;
+                        gap: 5px;
+                        align-items: center;
+                        justify-content: center;
+                    }
                 }
             }
 
             .portfolioImage {
                 height: 100%;
                 width: 100%;
-
-
             }
-
-
         }
     }
 }

@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./header.scss";
-import TextField from "@mui/material/TextField";
 import { BsSearch } from "react-icons/bs";
+
 const Header = () => {
   return (
     <div className="header">

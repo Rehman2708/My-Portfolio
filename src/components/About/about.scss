@@ -28,3 +28,14 @@
         }
     }
 }
+
+@media(max-width:400px) {
+    .about .aboutData {
+        gap: 10px;
+
+        .aboutPara {
+            line-height: 1.2;
+            font-size: $sFont;
+        }
+    }
+}

@@ -63,7 +63,53 @@
             margin-bottom: 0;
             color: var(--halfWhite);
             font-weight: 400;
-            font-size: $mFont;
+            font-size: $mmFont;
+        }
+    }
+}
+
+@media(max-width:800px) {
+    .experience .expData {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+
+@media(max-width:500px) {
+    .experience {
+        padding: 50px 0;
+
+        .experienceHeader {
+            left: 5%;
+            top: -20px;
+        }
+
+        .expRow {
+            gap: 20px;
+
+            .expYear {
+                height: 26px;
+                width: 55px;
+                font-size: $xsFont;
+            }
+
+            .expComp {
+                font-size: $mFont;
+            }
+        }
+
+        .expRow1 {
+            margin-left: 81px;
+            padding-left: 25px;
+
+            .expCompAdd {
+                font-size: $sFont;
+            }
+
+            .expCompText {
+                font-size: $msFont;
+            }
         }
     }
 }

@@ -1,8 +1,9 @@
 import React, { useRef } from "react";
 import "./header.scss";
 import logo from "../../assets/logo.png";
-import { BsSearch } from "react-icons/bs";
+import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-scroll";
+import { BsSearch } from "react-icons/bs";
 const Header = () => {
   return (
     <div className="header">
@@ -43,6 +44,7 @@ const Header = () => {
         <input className="headerInput" placeholder="Search" type="text" />
         <BsSearch />
       </div>
+      <AiOutlineMenu className="menuIcon" />
     </div>
   );
 };

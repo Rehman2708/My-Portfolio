@@ -10,6 +10,7 @@
         left: 150px;
         top: 25%;
         color: var(--basicWhite);
+        z-index: 1;
 
         .detailHeader {
             font-weight: 400;
@@ -69,6 +70,63 @@
             &:hover {
                 scale: 1.1;
             }
+        }
+    }
+}
+
+@media(max-width:1000px) {
+    .nameImage {
+        .myDetailsDiv {
+            left: 100px;
+            top: 100px;
+        }
+
+        .myImage {
+            right: 50px;
+            height: 80%;
+            width: 70%;
+        }
+
+        .socialIcons {
+            right: 50px;
+        }
+    }
+}
+
+@media(max-width:450px) {
+    .nameImage {
+        height: calc(100vh - 75px);
+
+        .myDetailsDiv {
+            left: 50px;
+            top: 100px;
+
+            .detailHeader {
+                font-size: $mFont;
+            }
+
+            .detailName {
+                font-size: $xxlFont;
+            }
+
+            .detailWork {
+                font-size: $mFont;
+            }
+
+            .detailButton {
+                padding: 5px 10px;
+                font-size: $msFont;
+            }
+        }
+
+        .myImage {
+            right: 0;
+            height: 80%;
+            width: 90%;
+        }
+
+        .socialIcons {
+            right: 20px;
         }
     }
 }

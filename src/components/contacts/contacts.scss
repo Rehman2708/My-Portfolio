@@ -2,7 +2,6 @@
 
 .contacts {
     .contact {
-        // height: 55vh;
         height: fit-content;
         padding-bottom: 100px;
         background-color: var(--bgColor1);
@@ -79,7 +78,6 @@
     }
 
     .gratitude {
-        // height: 35vh;
         height: fit-content;
         padding: 100px 0;
         background-color: var(--bgColor2);
@@ -94,5 +92,29 @@
         .contact .contactsGrid .gridRow1 {
             flex-direction: column;
         }
+    }
+}
+
+@media(max-width:500px) {
+    .contacts .contact {
+        .contactRow .contactHead {
+            margin-top: -17px;
+        }
+
+        .contactsGrid .card1 {
+            font-size: $xsFont;
+            padding: 15px;
+            gap: 15px;
+            width: 250px;
+        }
+
+        .contactRow1 {
+            bottom: -40px;
+        }
+    }
+
+    .contacts .gratitude {
+        padding: 50px 0;
+        font-size: $sFont;
     }
 }

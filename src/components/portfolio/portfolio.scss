@@ -59,6 +59,10 @@
                         margin: 10px 0;
                         width: 70%;
                         text-align: center;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 3;
+                        overflow: hidden;
                     }
 
                     .portfolioButton {
@@ -77,6 +81,43 @@
             .portfolioImage {
                 height: 100%;
                 width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width:800px) {
+    .portfolio .portfolioCards {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        .portfolioCard {
+            height: 40vw;
+            width: 40vw;
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .portfolio {
+        .portfolioCards {
+            .portfolioCard:hover {
+                .portfolioData {
+
+                    .portfolioName {
+                        font-size: $sFont;
+                    }
+
+                    .portfolioIntro {
+                        font-size: $xsFont;
+                    }
+
+                    .portfolioButton {
+                        padding: 3px 5px;
+                        font-weight: 500;
+                        gap: 5px;
+                    }
+                }
             }
         }
     }

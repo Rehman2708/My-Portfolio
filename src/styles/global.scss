@@ -48,6 +48,13 @@ button {
   font-family: $secondaryFont;
 }
 
+@media(max-width:500px) {
+  .headerText {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
 .flexCenter {
   display: flex;
   justify-content: center;

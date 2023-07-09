@@ -1,7 +1,7 @@
 import React from "react";
 import "./nameImage.scss";
 import { Link } from "react-scroll";
-import myImage from "../../assets/myImage1.png";
+import myImage from "../../assets/myImage2.png";
 import {
   BsFacebook,
   BsInstagram,
@@ -31,7 +31,7 @@ const NameImage = () => {
         </Link>
       </div>
       <img className="myImage" src={myImage} alt="" />
-      <div className="socialIcons">
+      <div className="socialIcons flexCenter">
         <div className="straightLine"></div>
         <a href="https://www.facebook.com/abdulrehman.khan.12382923">
           <BsFacebook className="socialIcon" />

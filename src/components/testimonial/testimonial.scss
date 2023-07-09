@@ -1,8 +1,8 @@
 @import "../../styles//global.scss";
 
 .testimonial {
-    height: 60vh;
-    padding: 13% 10%;
+    height: fit-content;
+    padding: 15% 10% 20% 10%;
     background-color: var(--bgColor2);
     position: relative;
 
@@ -15,7 +15,7 @@
     }
 
     .backBox {
-        height: 55%;
+        height: 50%;
         width: 40%;
         background-color: var(--primaryColor);
         position: absolute;
@@ -39,7 +39,7 @@
         justify-content: center;
         gap: 20px;
         color: var(--basicWhite);
-        width: 55%;
+        width: 50%;
         margin-top: 30px;
 
         .straightLine {

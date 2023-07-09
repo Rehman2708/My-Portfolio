@@ -6,10 +6,7 @@ import { Link } from "react-scroll";
 const Header = () => {
   return (
     <div className="header">
-      {/* <h1 className="headerLogo"> */}
-      {/* AR */}
-      <img className="logoImg" src={logo} alt="" />
-      {/* </h1> */}
+      <img className="logoImg" src={logo} />
       <div className="headerOptions">
         <Link
           className="headerOptionButton"
@@ -42,7 +39,7 @@ const Header = () => {
           Contact
         </Link>
       </div>
-      <div className="headerInputDiv">
+      <div className="headerInputDiv flexCenter">
         <input className="headerInput" placeholder="Search" type="text" />
         <BsSearch />
       </div>

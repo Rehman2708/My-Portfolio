@@ -3,10 +3,8 @@
 .portfolio {
     background-color: var(--bgColor2);
     height: fit-content;
-    display: flex;
+
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding-bottom: 100px;
 
     .portfolioHeader {
@@ -22,9 +20,7 @@
         .portfolioCard {
             width: 23vw;
             height: 23vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+
             flex-direction: column;
             background-color: var(--bgColor1);
             border-radius: 10px;
@@ -39,16 +35,14 @@
                 background-color: var(--primaryColor);
 
                 .portfolioData {
-                    display: block;
+                    display: flex;
                     font-weight: 500;
                     position: absolute;
                     height: 100%;
                     width: 100%;
                     background-color: rgba(128, 128, 128, 0.6);
-                    display: flex;
                     flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
+
 
                     .portfolioName {
                         font-size: $mFont;
@@ -75,10 +69,7 @@
                         font-size: $xsFont;
                         padding: 5px 10px;
                         font-weight: 600;
-                        display: flex;
                         gap: 5px;
-                        align-items: center;
-                        justify-content: center;
                     }
                 }
             }

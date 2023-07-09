@@ -47,3 +47,9 @@ button {
   white-space: nowrap;
   font-family: $secondaryFont;
 }
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

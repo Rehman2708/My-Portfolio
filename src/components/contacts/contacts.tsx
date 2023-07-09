@@ -30,7 +30,7 @@ const contacts = () => {
           </h1>
           <div className="straightLine"></div>
         </div>
-        <div className="contactsGrid">
+        <div className="contactsGrid flexCenter">
           <div className="gridRow1">
             <a
               href={`rehmanscholar321@gmail.com`}
@@ -61,7 +61,7 @@ const contacts = () => {
         <div className="contactRow1 contactRow">
           <div className="straightLine"></div>
           <h1 className="headerText contactHead">
-            <div className="socialIcons">
+            <div className="socialIcons flexCenter">
               <a href="https://www.facebook.com/abdulrehman.khan.12382923">
                 <BsFacebook className="socialIcon" />
               </a>
@@ -79,7 +79,7 @@ const contacts = () => {
           <div className="straightLine"></div>
         </div>
       </div>
-      <div className="gratitude">
+      <div className="gratitude flexCenter">
         <h1>"Thanks for Scrolling"</h1>
       </div>
     </div>

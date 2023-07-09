@@ -40,22 +40,19 @@
     }
 
     .myImage {
-        height: 100%;
-        width: 45%;
+        height: 110%;
+        width: 40%;
         position: absolute;
         bottom: 0;
-        right: 60px;
+        right: 120px;
     }
 
     .socialIcons {
         position: absolute;
         right: 100px;
         bottom: 30px;
-        display: flex;
         flex-direction: column;
         gap: 20px;
-        justify-content: center;
-        align-items: center;
 
         .straightLine {
             height: 100px;

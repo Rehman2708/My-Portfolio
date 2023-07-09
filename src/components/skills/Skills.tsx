@@ -24,11 +24,11 @@ const skillsArray = [
 ];
 const Skills = () => {
   return (
-    <div className="skills">
+    <div className="skills flexCenter">
       <h1 className="headerText skillsHeader">My Skills</h1>
       <div className="skillCards">
         {skillsArray.map((ele: any, i: number) => (
-          <div className="skillCard">
+          <div className="skillCard flexCenter">
             <img className="skillImage" src={ele.image} />
             <h2 className="skillName">{ele.name}</h2>
           </div>

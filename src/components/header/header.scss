@@ -7,24 +7,11 @@
   padding: 20px 100px;
   background-color: var(--bgColor1);
 
-
-  // .headerLogo {
-  //   font-size: $xxlFont;
-  //   font-weight: 700;
-  //   color: var(--primaryColor);
-  //   font-family: $secondaryFont;
-  // }
-
   .logoImg {
     height: 80%;
     width: 80px;
     margin: 0;
   }
-
-  // &>:first-child {
-  //   width: 17%;
-  //   text-align: start;
-  // }
 
   .headerOptions {
     display: flex;
@@ -45,9 +32,6 @@
 
   .headerInputDiv {
     background-color: var(--secondaryColor);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 5px;
     padding: 0 20px;
     color: var(--halfWhite);

@@ -13,14 +13,20 @@ import Portfolio from "./components/portfolio/Portfolio";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <NameImage />
+      <div className="shadowDiv">
+        <Header />
+        <NameImage />
+      </div>
       <About />
       <Skills />
       <Portfolio />
-      <Experience />
+      <div className="shadowDiv">
+        <Experience />
+      </div>
       <Testimonial />
-      <Contacts />
+      <div className="shadowDiv">
+        <Contacts />
+      </div>
     </div>
   );
 }

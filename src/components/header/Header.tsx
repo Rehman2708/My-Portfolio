@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./header.scss";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo2.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-scroll";
 import { BsSearch } from "react-icons/bs";
@@ -16,7 +16,7 @@ const Header = () => {
           to="about"
           smooth={true}
           offset={-100}
-          duration={700}
+          duration={600}
         >
           About
         </Link>
@@ -36,7 +36,7 @@ const Header = () => {
           to="contact"
           smooth={true}
           offset={0}
-          duration={1300}
+          duration={1400}
         >
           Contact
         </Link>
@@ -45,7 +45,6 @@ const Header = () => {
         <input className="headerInput" placeholder="Search" type="text" />
         <BsSearch />
       </div>
-      {/* <AiOutlineMenu className="menuIcon" /> */}
       <OptionModal />
     </div>
   );

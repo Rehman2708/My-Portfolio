@@ -1,7 +1,7 @@
 import React from "react";
 import "./nameImage.scss";
 import { Link } from "react-scroll";
-import myImage from "../../assets/myImage2.png";
+import myImage from "../../assets/myImage3.png";
 import {
   BsFacebook,
   BsInstagram,

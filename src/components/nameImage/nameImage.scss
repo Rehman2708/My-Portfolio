@@ -1,7 +1,7 @@
 @import "../../styles/global.scss";
 
 .nameImage {
-    height: calc(100vh - 123px);
+    height: calc(100vh - 100px);
     background-color: var(--bgColor1);
     position: relative;
 
@@ -41,8 +41,8 @@
     }
 
     .myImage {
-        height: 110%;
-        width: 40%;
+        height: 130%;
+        width: 35%;
         position: absolute;
         bottom: 0;
         right: 120px;
@@ -83,7 +83,7 @@
 
         .myImage {
             right: 50px;
-            height: 80%;
+            height: 100%;
             width: 70%;
         }
 
@@ -95,7 +95,7 @@
 
 @media(max-width:450px) {
     .nameImage {
-        height: calc(100vh - 75px);
+        // height: calc(100vh - 103px);
 
         .myDetailsDiv {
             left: 50px;
@@ -121,12 +121,18 @@
 
         .myImage {
             right: 0;
-            height: 80%;
-            width: 90%;
+            height: 100%;
+            width: 100%;
         }
 
         .socialIcons {
             right: 20px;
         }
+    }
+}
+
+@media(max-width:400px) {
+    .nameImage {
+        height: calc(100vh - 63px);
     }
 }

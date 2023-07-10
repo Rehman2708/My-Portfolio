@@ -22,7 +22,7 @@ const OptionModal = () => {
             to="about"
             smooth={true}
             offset={-100}
-            duration={700}
+            duration={600}
           >
             About
           </Link>
@@ -42,7 +42,7 @@ const OptionModal = () => {
             to="contact"
             smooth={true}
             offset={0}
-            duration={1300}
+            duration={1400}
           >
             Contact
           </Link>

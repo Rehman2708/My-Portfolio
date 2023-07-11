@@ -52,28 +52,35 @@
     }
 }
 
-@media(max-width:450px) {
-    .skills .skillCards {
-        grid-template-columns: 1fr;
-
-        .skillCard .skillName {
-            font-size: $sFont;
-            margin-top: 20px;
-        }
-    }
-}
 
 @media(max-width:600px) {
     .skills .skillCards .skillCard {
-        width: 220px;
-        height: 120px;
+        width: 150px;
+        height: 200px;
         padding-bottom: 10px;
-        justify-content: space-around;
-        flex-direction: row;
 
         .skillImage {
             height: 110px;
             width: 100px;
+        }
+    }
+}
+
+@media(max-width:450px) {
+    .skills .skillCards {
+        grid-template-columns: 1fr;
+
+        .skillCard {
+            width: 220px;
+            height: 120px;
+            padding-bottom: 10px;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+
+        .skillCard .skillName {
+            font-size: $sFont;
+            margin-top: 20px;
         }
     }
 }

@@ -10,17 +10,18 @@ const About = () => {
         <div className="straightLine"></div>
         <div>
           <p className="aboutPara">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            vitae minima ab velit maiores quisquam animi rem minus ea delectus
-            perspiciatis error, eum atque cupiditate aspernatur iste reiciendis
-            consequatur nobis corporis architecto nesciunt et?
+            Results-oriented Junior Engineer with a strong background in web
+            development. Proficient in HTML, CSS, and React JS, with a focus on
+            designing responsive web applications.
           </p>
           <p className="aboutPara">
-            Sit error saepe quo velit ipsum nesciunt repudiandae vero
-            repellendus provident impedit provident distinctio sapiente
-            necessitatibus quos officiis id error esse. Nesciunt sit odit
-            possimus laudantium eum mollitia delectus molestiae sed doloremque
-            rem esse ipsum incidunt, quibusdam officiis quae?
+            Committed to delivering high-quality work and constantly expanding
+            my skills. Seeking an opportunity to contribute my expertise and
+            drive innovation in a dynamic organization.
+          </p>
+          <p className="aboutPara">
+            Implemented design principles and paid close attention to detail in
+            developing a responsive profile page.
           </p>
         </div>
       </div>

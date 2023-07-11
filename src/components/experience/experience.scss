@@ -38,7 +38,7 @@
 
         .expComp {
             font-weight: 500;
-            font-size: $xlFont;
+            font-size: $lFont;
         }
 
     }
@@ -55,15 +55,15 @@
         .expCompAdd {
             margin: 0;
             margin-top: -10px;
-            font-size: $lFont;
-            font-weight: 500;
+            font-size: $mFont;
+            font-weight: 400;
         }
 
         .expCompText {
             margin-bottom: 0;
             color: var(--halfWhite);
             font-weight: 400;
-            font-size: $mmFont;
+            font-size: $sFont;
         }
     }
 }

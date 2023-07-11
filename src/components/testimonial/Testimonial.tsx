@@ -10,10 +10,11 @@ const Testimonial = () => {
           <div className="straightLine"></div>
           <div>
             <p className="testimonialPara">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-              vitae minima ab velit maiores quisquam animi rem minus ea delectus
-              perspiciatis error, eum atque cupiditate aspernatur iste
-              reiciendis consequatur nobis corporis architecto nesciunt et?
+              Consistently delivered high-quality solutions within deadlines for
+              client projects. Experienced in managing and working effectively
+              in diverse teams. Enjoy tackling challenging tasks and finding
+              innovative solutions. Constantly exploring new technologies and
+              staying updated with the latest trends in the industry.
               <h2 className="testimonialAuthor">Rehman Khan</h2>
             </p>
           </div>

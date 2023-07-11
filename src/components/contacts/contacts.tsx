@@ -80,7 +80,7 @@ const contacts = () => {
         </div>
       </div>
       <div className="gratitude flexCenter">
-        <h1>"Thanks for Scrolling"</h1>
+        <h1 className="gratitudeText">"Thanks for Scrolling"</h1>
       </div>
     </div>
   );

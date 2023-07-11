@@ -97,24 +97,33 @@
 
 @media(max-width:500px) {
     .contacts .contact {
+        padding-bottom: 60px;
+
         .contactRow .contactHead {
             margin-top: -17px;
         }
 
-        .contactsGrid .card1 {
-            font-size: $xsFont;
-            padding: 15px;
-            gap: 15px;
-            width: 250px;
+        .contactsGrid {
+            margin-top: 20px;
+
+            .card1 {
+                font-size: $xsFont;
+                padding: 15px;
+                gap: 15px;
+                width: 250px;
+            }
         }
 
         .contactRow1 {
-            bottom: -40px;
+            bottom: -33px;
         }
     }
 
     .contacts .gratitude {
         padding: 50px 0;
-        font-size: $sFont;
+
+        .gratitudeText {
+            font-size: $lFont;
+        }
     }
 }

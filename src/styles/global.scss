@@ -53,7 +53,7 @@ button {
 
 @media(max-width:500px) {
   .headerText {
-    font-size: 2rem;
+    font-size: $xlFont;
     font-weight: 600;
   }
 }

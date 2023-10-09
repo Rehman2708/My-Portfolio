@@ -87,9 +87,7 @@ const Contacts = () => {
         </div>
       </div>
       <div className="gratitude flexCenter">
-        <h1 className="gratitudeText" data-aos="flip-up">
-          "Thanks for Scrolling"
-        </h1>
+        <h1 className="gratitudeText">"Thanks for Scrolling"</h1>
       </div>
     </div>
   );

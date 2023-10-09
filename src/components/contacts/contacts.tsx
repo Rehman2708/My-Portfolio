@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./contacts.scss";
 import {
   BsFacebook,
@@ -9,6 +9,9 @@ import {
   BsFillMapFill,
   BsFillTelephoneFill,
 } from "react-icons/bs";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const handleEmailClick = (email: string) => {
   const mailtoLink = `mailto:${email}`;
   window.location.href = mailtoLink;
@@ -19,7 +22,11 @@ const handlePhoneClick = (phoneNumber: string) => {
   window.location.href = telLink;
 };
 
-const contacts = () => {
+const Contacts = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <div className="contacts">
       <div className="contact">
@@ -31,9 +38,9 @@ const contacts = () => {
           <div className="straightLine"></div>
         </div>
         <div className="contactsGrid flexCenter">
-          <div className="gridRow1">
+          <div className="gridRow1" data-aos="zoom-out-up">
             <a
-              href={`rehmanscholar321@gmail.com`}
+              href={``}
               onClick={() => handleEmailClick("rehmanscholar321@gmail.com")}
             >
               <div className="card1">
@@ -41,24 +48,24 @@ const contacts = () => {
                 rehmanscholar321@gmail.com
               </div>
             </a>
-            <a
-              href={`+91 8286529560`}
-              onClick={() => handlePhoneClick("+91 8286529560")}
-            >
+            <a href={``} onClick={() => handlePhoneClick("+91 8286529560")}>
               <div className="card1">
                 <BsFillTelephoneFill className="contactCardSvg" />
                 +91 8286529560 | +91 9321145007
               </div>
             </a>
           </div>
-          <a href="https://goo.gl/maps/XZA8Q5WzJLXDxTAH6">
+          <a
+            href="https://goo.gl/maps/XZA8Q5WzJLXDxTAH6"
+            data-aos="zoom-in-right"
+          >
             <div className="card1">
               <BsFillMapFill className="contactCardSvg" />
               Mumbai, Maharashtra, India
             </div>
           </a>
         </div>
-        <div className="contactRow1 contactRow">
+        <div className="contactRow1 contactRow" data-aos="zoom-out-down">
           <div className="straightLine"></div>
           <h1 className="headerText contactHead">
             <div className="socialIcons flexCenter">
@@ -80,10 +87,12 @@ const contacts = () => {
         </div>
       </div>
       <div className="gratitude flexCenter">
-        <h1 className="gratitudeText">"Thanks for Scrolling"</h1>
+        <h1 className="gratitudeText" data-aos="flip-up">
+          "Thanks for Scrolling"
+        </h1>
       </div>
     </div>
   );
 };
 
-export default contacts;
+export default Contacts;

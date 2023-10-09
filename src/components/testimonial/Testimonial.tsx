@@ -1,14 +1,20 @@
-import React from "react";
 import "./testimonial.scss";
 import testimonialImg from "../../assets/testimonial1.png";
+import React, { useState, useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Testimonial = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  });
   return (
     <div className="testimonial">
       <h1 className="headerText">Testimonial</h1>
       <div className="tRow">
         <div className="testimonialData">
           <div className="straightLine"></div>
-          <div>
+          <div data-aos="zoom-out-down">
             <p className="testimonialPara">
               Consistently delivered high-quality solutions within deadlines for
               client projects. Experienced in managing and working effectively
@@ -19,8 +25,13 @@ const Testimonial = () => {
             </p>
           </div>
         </div>
-        <div className="backBox">
-          <img src={testimonialImg} className="testimonialImg" alt="" />
+        <div className="backBox" data-aos="zoom-in-up">
+          <img
+            data-aos="zoom-in-up"
+            src={testimonialImg}
+            className="testimonialImg"
+            alt=""
+          />
         </div>
       </div>
     </div>

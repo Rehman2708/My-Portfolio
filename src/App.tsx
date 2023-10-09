@@ -5,11 +5,11 @@ import Header from "./components/header/Header";
 import About from "./components/about/About";
 import NameImage from "./components/nameImage/NameImage";
 import Skills from "./components/skills/Skills";
-import Contacts from "./components/contacts/contacts";
 import Testimonial from "./components/testimonial/Testimonial";
 import Experience from "./components/experience/Experience";
 import Portfolio from "./components/portfolio/Portfolio";
 import { BsFillLightbulbFill, BsFillLightbulbOffFill } from "react-icons/bs";
+import Contacts from "./components/contacts/Contacts";
 
 function App() {
   const [lightTheme, setLightTheme] = useState(false);

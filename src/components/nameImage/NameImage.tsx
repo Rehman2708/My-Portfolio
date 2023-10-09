@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./nameImage.scss";
 import { Link } from "react-scroll";
 import myImage from "../../assets/myImage3.png";
 import myImage1 from "../../assets/myImage2 (2).png";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   BsFacebook,
   BsInstagram,
@@ -12,6 +13,9 @@ import {
   BsWhatsapp,
 } from "react-icons/bs";
 const NameImage = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  });
   const [lightTheme, setLightTheme] = useState(false);
 
   const toggleTheme = () => {
@@ -19,7 +23,7 @@ const NameImage = () => {
   };
   return (
     <div className="nameImage">
-      <div className="myDetailsDiv">
+      <div className="myDetailsDiv" data-aos="fade-right">
         <h1 className="detailHeader">
           I'M
           <span className="detailName"> Abdul Rehman</span>
@@ -37,7 +41,12 @@ const NameImage = () => {
           <button className="detailButton">Contact Me</button>
         </Link>
       </div>
-      <img className="myImage" src={lightTheme ? myImage : myImage} alt="" />
+      <img
+        data-aos="fade-left"
+        className="myImage"
+        src={lightTheme ? myImage : myImage}
+        alt=""
+      />
       <div className="socialIcons flexCenter">
         <div className="straightLine"></div>
         <a href="https://www.facebook.com/abdulrehman.khan.12382923">
@@ -56,5 +65,4 @@ const NameImage = () => {
     </div>
   );
 };
-
 export default NameImage;

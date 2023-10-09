@@ -1,6 +1,9 @@
-import React from "react";
 import "./experience.scss";
 import { BsFillCircleFill } from "react-icons/bs";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, { useState, useEffect } from "react";
+
 const experienceArray = [
   {
     year: "2017",
@@ -29,18 +32,21 @@ const experienceArray = [
   },
 ];
 const Experience = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  });
   return (
     <div className="experience">
       <h1 className="headerText experienceHeader">Education & Experience</h1>
 
       {experienceArray.map((ele: any, i: number) => (
         <div className="expData">
-          <div className="expRow">
+          <div className="expRow" data-aos="zoom-in-right">
             <h3 className="expYear">{ele.year}</h3>
             <BsFillCircleFill className="expIcon" />
             <h1 className="expComp">{ele.name}</h1>
           </div>
-          <div className="expRow1">
+          <div className="expRow1" data-aos="zoom-in-left">
             <h2 className="expCompAdd">
               {ele.address}
               <p className="expCompText">{ele.text}</p>

@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./about.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  });
   return (
     <div className="about">
       <h1 className="headerText" id="about">
@@ -8,7 +13,7 @@ const About = () => {
       </h1>
       <div className="aboutData">
         <div className="straightLine"></div>
-        <div>
+        <div data-aos="fade-down">
           <p className="aboutPara">
             Results-oriented Junior Engineer with a strong background in web
             development. Proficient in HTML, CSS, and React JS, with a focus on

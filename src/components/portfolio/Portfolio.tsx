@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
 import "./portfolio.scss";
+import React, { useRef, useEffect } from "react";
 
 import portfolio1 from "../../assets/portfolioImgs/portfolio1.jpg";
 import portfolio2 from "../../assets/portfolioImgs/portfolio2.jpg";
@@ -9,7 +9,8 @@ import portfolio5 from "../../assets/portfolioImgs/portfolio5.jpg";
 import portfolio6 from "../../assets/portfolioImgs/portfolio6.jpg";
 import portfolio7 from "../../assets/portfolioImgs/portfolio7.jpg";
 import { BsArrowRight } from "react-icons/bs";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const portfolioArray = [
   {
     name: "Lorem Ipsum",
@@ -43,6 +44,9 @@ const portfolioArray = [
   },
 ];
 const Portfolio = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  });
   return (
     <div className="portfolio flexCenter">
       <h1 className="headerText portfolioHeader" id="portfolio">
@@ -50,7 +54,7 @@ const Portfolio = () => {
       </h1>
       <div className="portfolioCards">
         {portfolioArray.map((ele: any, i: number) => (
-          <div className="portfolioCard flexCenter">
+          <div className="portfolioCard flexCenter " data-aos="flip-left">
             <img className="portfolioImage" src={ele.image} />
             <div className="portfolioData flexCenter">
               <h2 className="portfolioName">{ele.name}</h2>

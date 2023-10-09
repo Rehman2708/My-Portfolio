@@ -74,7 +74,35 @@
     }
 }
 
-@media(max-width:1000px) {
+.lightApp .nameImage {
+    background-color: var(--bgColor1Light);
+
+    .myDetailsDiv {
+        color: var(--basicWhiteLight);
+
+        .detailName {
+            color: var(--primaryColorLight);
+        }
+
+        .detailButton {
+            border: 3px solid var(--primaryColorLight);
+            background-color: transparent;
+            color: var(--primaryColorLight);
+        }
+    }
+
+    .socialIcons {
+        .straightLine {
+            background-color: var(--primaryColorLight);
+        }
+
+        .socialIcon {
+            color: var(--basicWhiteLight);
+        }
+    }
+}
+
+@media (max-width: 1000px) {
     .nameImage {
         .myDetailsDiv {
             left: 100px;
@@ -93,9 +121,8 @@
     }
 }
 
-@media(max-width:450px) {
+@media (max-width: 450px) {
     .nameImage {
-
         .myDetailsDiv {
             left: 50px;
             top: 70px;
@@ -130,7 +157,7 @@
     }
 }
 
-@media(max-width:400px) {
+@media (max-width: 400px) {
     .nameImage {
         height: calc(100vh - 63px);
     }

@@ -63,6 +63,33 @@
     }
 }
 
+.lightApp .testimonial {
+    background-color: var(--bgColor2Light);
+
+    .headerText {
+        color: var(--primaryColorLight);
+    }
+
+    .backBox {
+        background-color: var(--primaryColorLight);
+
+        .testimonialImg {}
+    }
+
+    .testimonialData {
+        color: var(--basicWhiteLight);
+
+        .straightLine {
+            background-color: var(--primaryColorLight);
+        }
+
+        .testimonialPara {
+
+            .testimonialAuthor {}
+        }
+    }
+}
+
 @media(max-width:600px) {
     .testimonial {
         padding-left: 5%;

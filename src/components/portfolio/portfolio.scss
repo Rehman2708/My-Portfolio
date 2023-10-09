@@ -88,6 +88,34 @@
     }
 }
 
+.lightApp .portfolio {
+    background-color: var(--bgColor2Light);
+
+    .portfolioHeader {
+        color: var(--primaryColorLight);
+    }
+
+    .portfolioCards {
+
+        .portfolioCard {
+            background-color: var(--bgColor1Light);
+            color: var(--basicWhiteLight);
+
+            &:hover {
+                .portfolioData {
+                    background-color: var(--overlayBgLight);
+
+                    .portfolioButton {
+                        background-color: var(--primaryColorLight);
+                        color: var(--secondaryColorLight);
+                    }
+                }
+            }
+
+        }
+    }
+}
+
 @media(max-width:800px) {
     .portfolio .portfolioCards {
         grid-template-columns: 1fr 1fr;

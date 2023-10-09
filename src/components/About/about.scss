@@ -30,6 +30,24 @@
     }
 }
 
+.lightApp .about {
+    background-color: var(--bgColor2Light);
+
+    .headerText {
+        color: var(--primaryColorLight);
+    }
+
+    .aboutData {
+        color: var(--basicWhiteLight);
+
+        .straightLine {
+            background-color: var(--primaryColorLight);
+        }
+
+
+    }
+}
+
 @media(max-width:450px) {
     .about .aboutData {
         gap: 10px;

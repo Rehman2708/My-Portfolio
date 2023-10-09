@@ -68,6 +68,42 @@
     }
 }
 
+.lightApp .experience {
+    background-color: var(--bgColor1Light);
+
+    .experienceHeader {
+        color: var(--primaryColorLight);
+    }
+
+    .expData {
+        color: var(--basicWhiteLight);
+    }
+
+    .expRow {
+
+        .expIcon {
+            color: var(--primaryColorLight);
+        }
+
+        .expYear {
+            background-color: var(--bgColor2Light);
+        }
+
+        .expComp {}
+
+    }
+
+    .expRow1 {
+        border-left: 5px solid var(--primaryColorLight);
+
+        .expCompAdd {}
+
+        .expCompText {
+            color: var(--primaryColorLight);
+        }
+    }
+}
+
 @media(max-width:800px) {
     .experience .expData {
         width: 80%;

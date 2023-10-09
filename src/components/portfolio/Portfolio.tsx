@@ -1,10 +1,10 @@
 import "./portfolio.scss";
 import React, { useRef, useEffect } from "react";
 
-import portfolio1 from "../../assets/portfolioImgs/portfolio1.jpg";
-import portfolio2 from "../../assets/portfolioImgs/portfolio2.jpg";
-import portfolio3 from "../../assets/portfolioImgs/portfolio3.jpg";
-import portfolio4 from "../../assets/portfolioImgs/portfolio4.jpg";
+import portfolio1 from "../../assets/portfolioImgs/portfolio1.png";
+import portfolio2 from "../../assets/portfolioImgs/portfolio2.png";
+import portfolio3 from "../../assets/portfolioImgs/portfolio3.png";
+import portfolio4 from "../../assets/portfolioImgs/portfolio4.png";
 import portfolio5 from "../../assets/portfolioImgs/portfolio5.jpg";
 import portfolio6 from "../../assets/portfolioImgs/portfolio6.jpg";
 import portfolio7 from "../../assets/portfolioImgs/portfolio7.jpg";
@@ -13,34 +13,38 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 const portfolioArray = [
   {
-    name: "Lorem Ipsum",
+    name: "My Portfolio",
     image: portfolio1,
-    intro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. optio",
+    intro: "Responsive Portfolio using HTML, SCSS & React",
+    link: "https://abdulrehman-portfolio.netlify.app",
   },
   {
-    name: "Dolor sit amet",
+    name: "Flipkart Clone",
     image: portfolio4,
-    intro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. optio",
+    intro: "Responsive flipkart clone using HTML, SCSS & React",
+    link: "https://flipkart-clone-abdul.netlify.app",
   },
   {
-    name: "Consectetur adipisicing",
+    name: "LandScaper Site",
     image: portfolio3,
-    intro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. optio",
+    intro: "Basic LandScaper site using HTML & CSS",
+    link: "https://landscaper-basic.netlify.app",
   },
   {
-    name: "Amet consectetur",
+    name: "Mountain Trekking Site",
     image: portfolio2,
-    intro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. optio",
+    intro: "Basic Mountain Trekking Site using HTML & CSS",
+    link: "https://mountain-trekking-basic.netlify.app",
   },
   {
-    name: "JavaScript",
+    name: "Hardcoded",
     image: portfolio5,
-    intro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. optio",
+    intro: "Hardcoded",
   },
   {
-    name: "Ipsum dolor sit",
+    name: "Hardcoded",
     image: portfolio6,
-    intro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. optio",
+    intro: "Hardcoded",
   },
 ];
 const Portfolio = () => {
@@ -59,7 +63,7 @@ const Portfolio = () => {
             <div className="portfolioData flexCenter">
               <h2 className="portfolioName">{ele.name}</h2>
               <h3 className="portfolioIntro">{ele.intro}</h3>
-              <a href="/">
+              <a href={ele.link}>
                 <button className="portfolioButton flexCenter">
                   See More
                   <BsArrowRight />

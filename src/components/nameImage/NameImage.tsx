@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import {
   BsFacebook,
+  BsGithub,
   BsInstagram,
   BsLinkedin,
   BsMailbox,
@@ -48,18 +49,20 @@ const NameImage = () => {
         alt=""
       />
       <div className="socialIcons flexCenter">
-        <div className="straightLine"></div>
-        <a href="https://www.facebook.com/abdulrehman.khan.12382923">
-          <BsFacebook className="socialIcon" />
-        </a>
-        <a href="https://wa.me/918286529560">
-          <BsWhatsapp className="socialIcon" />
+        <a href="https://github.com/Rehman2708">
+          <BsGithub className="socialIcon" />
         </a>
         <a href="https://www.linkedin.com/in/abdul-rehman-khan-a43b36233">
           <BsLinkedin className="socialIcon" />
         </a>
+        <a href="https://wa.me/918286529560">
+          <BsWhatsapp className="socialIcon" />
+        </a>
         <a href="https://instagram.com/rehman_khan_2274?igshid=MzNlNGNkZWQ4Mg==">
           <BsInstagram className="socialIcon" />
+        </a>
+        <a href="https://www.facebook.com/abdulrehman.khan.12382923">
+          <BsFacebook className="socialIcon" />
         </a>
       </div>
     </div>

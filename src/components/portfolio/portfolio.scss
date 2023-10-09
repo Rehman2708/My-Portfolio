@@ -20,12 +20,16 @@
         .portfolioCard {
             width: 23vw;
             height: 23vw;
-
             flex-direction: column;
             background-color: var(--bgColor1);
+            backdrop-filter: blur(10px);
             border-radius: 10px;
             color: var(--basicWhite);
             position: relative;
+
+            .portfolioImage {
+                object-fit: cover;
+            }
 
             .portfolioData {
                 display: none;
@@ -42,6 +46,7 @@
                     width: 100%;
                     background-color: var(--overlayBg);
                     flex-direction: column;
+                    backdrop-filter: blur(3px);
 
 
                     .portfolioName {

@@ -7,7 +7,12 @@ import Skills from "./components/skills/Skills";
 import Testimonial from "./components/testimonial/Testimonial";
 import Experience from "./components/experience/Experience";
 import Portfolio from "./components/portfolio/Portfolio";
-import { BsFillLightbulbFill, BsFillLightbulbOffFill } from "react-icons/bs";
+import {
+  BsFillLightbulbFill,
+  BsFillLightbulbOffFill,
+  BsMoon,
+  BsSun,
+} from "react-icons/bs";
 import Contacts from "./components/contacts/Contacts";
 
 function App() {
@@ -20,11 +25,15 @@ function App() {
   return (
     <div className={lightTheme ? "app" : "app lightApp"}>
       <button
-        className={lightTheme ? "themeButton" : "themeButton themeButton1"}
+        className={
+          lightTheme
+            ? "themeButton flexCenter shadowDiv"
+            : "themeButton themeButton1 flexCenter shadowDiv"
+        }
         onClick={toggleTheme}
       >
-        {lightTheme ? <BsFillLightbulbFill /> : <BsFillLightbulbOffFill />}
-        {lightTheme ? "Light" : "Dark"}
+        {lightTheme ? <BsSun /> : <BsMoon />}
+        {/* {lightTheme ? "Light" : "Dark"} */}
       </button>
 
       <div className="shadowDiv">

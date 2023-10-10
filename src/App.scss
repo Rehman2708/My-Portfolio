@@ -29,10 +29,15 @@
   color: var(--primaryColorLight);
   border: none;
   border-radius: 100px;
-  height: 80px;
-  width: 80px;
-  font-size: $mFont;
+  height: 60px;
+  width: 60px;
   font-weight: 500;
+
+  svg {
+    height: 30px;
+    width: 30px;
+  }
+
 }
 
 .themeButton1 {

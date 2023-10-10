@@ -22,7 +22,7 @@ const portfolioArray = [
     name: "Flipkart Clone",
     image: portfolio4,
     intro: "Responsive flipkart clone using HTML, SCSS & React",
-    link: "https://flipkart-clone-abdul.netlify.app",
+    link: "https://rad-bonbon-6b6619.netlify.app/",
   },
   {
     name: "LandScaper Site",

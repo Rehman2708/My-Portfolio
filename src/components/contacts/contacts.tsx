@@ -39,8 +39,9 @@ const Contacts = () => {
           <div className="straightLine"></div>
         </div>
         <div className="contactsGrid flexCenter">
-          <div className="gridRow1" data-aos="zoom-out-up">
+          <div className="gridRow1">
             <a
+              data-aos="zoom-out-right"
               href={``}
               onClick={() => handleEmailClick("rehmanscholar321@gmail.com")}
             >
@@ -49,17 +50,18 @@ const Contacts = () => {
                 rehmanscholar321@gmail.com
               </div>
             </a>
-            <a href={``} onClick={() => handlePhoneClick("+91 8286529560")}>
+            <a
+              data-aos="zoom-out-left"
+              href={``}
+              onClick={() => handlePhoneClick("+91 8286529560")}
+            >
               <div className="card1">
                 <BsFillTelephoneFill className="contactCardSvg" />
                 +91 8286529560 | +91 9321145007
               </div>
             </a>
           </div>
-          <a
-            href="https://goo.gl/maps/XZA8Q5WzJLXDxTAH6"
-            data-aos="zoom-in-right"
-          >
+          <a href="https://goo.gl/maps/XZA8Q5WzJLXDxTAH6" data-aos="zoom-in-up">
             <div className="card1">
               <BsFillMapFill className="contactCardSvg" />
               Mumbai, Maharashtra, India

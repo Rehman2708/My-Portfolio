@@ -9,26 +9,20 @@ const experienceArray = [
     year: "2017",
     name: "High School",
     address: "Mumbai,Maharashtra",
-    text: "Completed high school from Adarsh English High School in Mumbai with the Maharashtra state board. I've score 408 Marks outoff 500 i.e. 81.60%. The best score out of all sublect is 95/100 in Mathematics.",
+    text: "Completed high school from N.K.E.S HIGH SCHOOL in Mumbai with the Maharashtra state board. I've score 367 Marks outoff 500 i.e. 73.40%.",
   },
 
   {
     year: "2019",
     name: "Junior College",
     address: "Mumbai,Maharashtra",
-    text: "Completed Junior college from Guru Nanak Khalsa College of Arts, Science & commerce in Mumbai in science stream with the Maharashtra state board.",
-  },
-  {
-    year: "2022",
-    name: "B.Sc(IT)",
-    address: "Mumbai,Maharashtra",
-    text: "Completed Graduation from Vidyalankar School of Information Technology in Mumbai in Information Technology field. The overall CGPA of all semesters is 8.12.",
+    text: "Completed Junior college from Sathaye College in Mumbai in science stream with the Maharashtra state board.",
   },
   {
     year: "2023",
-    name: "Junior Engineer",
-    address: "BYLDD",
-    text: "Working at the post of Junior Engineer in an It based company named BYLDD since November 2022. My work here is to design the frontend.",
+    name: "B.Sc(IT)",
+    address: "Mumbai,Maharashtra",
+    text: "Completed Graduation from Guru Nanak College in Mumbai in Information Technology field. The overall CGPA of all semesters is 8.72.",
   },
 ];
 const Experience = () => {

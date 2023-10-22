@@ -15,18 +15,18 @@ const About = () => {
         <div className="straightLine"></div>
         <div data-aos="fade-down">
           <p className="aboutPara">
-            Results-oriented Junior Engineer with a strong background in web
-            development. Proficient in HTML, CSS, and React JS, with a focus on
-            designing responsive web applications.
+            Enthusiastic and dedicated graduate with a strong foundation in web
+            development and a passion for creating efficient and scalable web
+            applications and APIs
           </p>
           <p className="aboutPara">
-            Committed to delivering high-quality work and constantly expanding
-            my skills. Seeking an opportunity to contribute my expertise and
-            drive innovation in a dynamic organization.
+            Seeking a Backend Web Developer position to leverage my skills in
+            Node.js and contribute to the growth of a dynamic tech team
           </p>
           <p className="aboutPara">
-            Implemented design principles and paid close attention to detail in
-            developing a responsive profile page.
+            To work with an organization where can learn new skills and increase
+            my abilities and enhance my technical ,professional and
+            interpersonal expertise through success of the organization.
           </p>
         </div>
       </div>

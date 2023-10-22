@@ -1,5 +1,5 @@
 import "./testimonial.scss";
-import testimonialImg from "../../assets/testimonial1.png";
+import testimonialImg from "../../assets/samirt.jpg";
 import React, { useState, useEffect } from "react";
 
 import AOS from "aos";
@@ -21,7 +21,7 @@ const Testimonial = () => {
               in diverse teams. Enjoy tackling challenging tasks and finding
               innovative solutions. Constantly exploring new technologies and
               staying updated with the latest trends in the industry.
-              <h2 className="testimonialAuthor">Rehman Khan</h2>
+              <h2 className="testimonialAuthor">Samir Khan</h2>
             </p>
           </div>
         </div>

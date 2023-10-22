@@ -42,7 +42,7 @@ function App() {
       </div>
       <About />
       <Skills />
-      <Portfolio />
+      {/* <Portfolio /> */}
       <div className="shadowDiv">
         <Experience />
       </div>

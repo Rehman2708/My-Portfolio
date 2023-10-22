@@ -4,7 +4,7 @@ import "./skills.scss";
 import htmlLogo from "../../assets/htmlLogo.png";
 import cssLogo from "../../assets/cssLogo.png";
 import jsLogo from "../../assets/jsLogo.png";
-import sassLogo from "../../assets/sassLogo.png";
+import sassLogo from "../../assets/node.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const skillsArray = [
@@ -17,7 +17,7 @@ const skillsArray = [
     image: cssLogo,
   },
   {
-    name: "SASS",
+    name: "Node",
     image: sassLogo,
   },
   {

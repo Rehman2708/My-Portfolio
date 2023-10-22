@@ -47,17 +47,17 @@ const Contacts = () => {
             >
               <div className="card1">
                 <BsEnvelopeOpen className="contactCardSvg" />
-                rehmanscholar321@gmail.com
+                samirkhan215786@gmail.com
               </div>
             </a>
             <a
               data-aos="zoom-out-left"
               href={``}
-              onClick={() => handlePhoneClick("+91 8286529560")}
+              onClick={() => handlePhoneClick("+91 8291464520")}
             >
               <div className="card1">
                 <BsFillTelephoneFill className="contactCardSvg" />
-                +91 8286529560 | +91 9321145007
+                +91 8291464520
               </div>
             </a>
           </div>
@@ -72,20 +72,14 @@ const Contacts = () => {
           <div className="straightLine"></div>
           <h1 className="headerText contactHead">
             <div className="socialIcons flexCenter">
-              <a href="https://github.com/Rehman2708">
+              <a href="https:/github.com/SAMIR0108">
                 <BsGithub className="socialIcon" />
               </a>
-              <a href="https://www.linkedin.com/in/abdul-rehman-khan-a43b36233">
+              <a href="http://www.linkedin.com/in/samirkhan0108">
                 <BsLinkedin className="socialIcon" />
               </a>
-              <a href="https://wa.me/918286529560">
+              <a href="https://wa.me/918291464520">
                 <BsWhatsapp className="socialIcon" />
-              </a>
-              <a href="https://instagram.com/rehman_khan_2274?igshid=MzNlNGNkZWQ4Mg==">
-                <BsInstagram className="socialIcon" />
-              </a>
-              <a href="https://www.facebook.com/abdulrehman.khan.12382923">
-                <BsFacebook className="socialIcon" />
               </a>
             </div>
           </h1>

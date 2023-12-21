@@ -23,7 +23,7 @@ const handlePhoneClick = (phoneNumber: string) => {
   window.location.href = telLink;
 };
 
-const Contacts = () => {
+const ContactMe = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -99,4 +99,4 @@ const Contacts = () => {
   );
 };
 
-export default Contacts;
+export default ContactMe;

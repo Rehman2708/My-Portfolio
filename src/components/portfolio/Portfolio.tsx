@@ -5,7 +5,7 @@ import portfolio1 from "../../assets/portfolioImgs/portfolio1.png";
 import portfolio2 from "../../assets/portfolioImgs/portfolio2.png";
 import portfolio3 from "../../assets/portfolioImgs/portfolio3.png";
 import portfolio4 from "../../assets/portfolioImgs/portfolio4.png";
-import portfolio5 from "../../assets/portfolioImgs/portfolio5.jpg";
+import portfolio5 from "../../assets/portfolioImgs/portfolio5.png";
 import portfolio6 from "../../assets/portfolioImgs/portfolio6.jpg";
 import portfolio7 from "../../assets/portfolioImgs/portfolio7.jpg";
 import { BsArrowRight } from "react-icons/bs";
@@ -37,9 +37,10 @@ const portfolioArray = [
     link: "https://mountain-trekking-basic.netlify.app",
   },
   {
-    name: "Hardcoded",
+    name: "My profile Card",
     image: portfolio5,
-    intro: "Hardcoded",
+    intro: "Responsive profile card with hover animation",
+    link: "https://abdul-rehman-profilecard.netlify.app",
   },
   {
     name: "Hardcoded",

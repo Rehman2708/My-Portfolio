@@ -7,13 +7,13 @@ import Skills from "./components/skills/Skills";
 import Testimonial from "./components/testimonial/Testimonial";
 import Experience from "./components/experience/Experience";
 import Portfolio from "./components/portfolio/Portfolio";
+import ContactMe from "./components/contacts/contacts";
 import {
   BsFillLightbulbFill,
   BsFillLightbulbOffFill,
   BsMoon,
   BsSun,
 } from "react-icons/bs";
-import Contacts from "./components/contacts/Contacts";
 
 function App() {
   const [lightTheme, setLightTheme] = useState(false);
@@ -48,7 +48,7 @@ function App() {
       </div>
       <Testimonial />
       <div className="shadowDiv">
-        <Contacts />
+        <ContactMe />
       </div>
     </div>
   );

@@ -1,7 +1,6 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./header.scss";
 import logo from "../../assets/logo2.png";
-import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-scroll";
 import { BsSearch } from "react-icons/bs";
 import OptionModal from "./OptionModal";

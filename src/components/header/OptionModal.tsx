@@ -1,4 +1,3 @@
-import { Modal } from "@mui/material";
 import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { MdOutlineClear } from "react-icons/md";

@@ -23,9 +23,10 @@
             flex-direction: column;
             background-color: var(--bgColor1);
             backdrop-filter: blur(10px);
-            border-radius: 10px;
+            border-radius: 5px;
             color: var(--basicWhite);
             position: relative;
+            overflow: hidden;
 
             .portfolioImage {
                 object-fit: cover;
@@ -33,55 +34,53 @@
 
             .portfolioData {
                 display: none;
+                font-weight: 500;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: var(--overlayBg);
+                flex-direction: column;
+                backdrop-filter: blur(2px);
+                // background-color: var(--primaryColor);
+
+                .portfolioName {
+                    font-size: $mFont;
+                    font-weight: 600;
+                    margin: 0;
+                    width: 80%;
+                    text-align: center;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .portfolioIntro {
+                    font-size: $msFont;
+                    font-weight: 400;
+                    margin: 10px 0;
+                    width: 70%;
+                    text-align: center;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                    overflow: hidden;
+                }
+
+                .portfolioButton {
+                    background-color: var(--primaryColor);
+                    border-radius: 5px;
+                    border: none;
+                    color: var(--bgColor1);
+                    font-size: $msFont;
+                    padding: 5px 10px;
+                    font-weight: 600;
+                    gap: 5px;
+                }
             }
 
             &:hover {
-                background-color: var(--primaryColor);
-
                 .portfolioData {
                     display: flex;
-                    font-weight: 500;
-                    position: absolute;
-                    height: 100%;
-                    width: 100%;
-                    background-color: var(--overlayBg);
-                    flex-direction: column;
-                    backdrop-filter: blur(3px);
-
-
-                    .portfolioName {
-                        font-size: $mFont;
-                        font-weight: 600;
-                        margin: 0;
-                        width: 80%;
-                        text-align: center;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                    }
-
-                    .portfolioIntro {
-                        font-size: $msFont;
-                        font-weight: 400;
-                        margin: 10px 0;
-                        width: 70%;
-                        text-align: center;
-                        display: -webkit-box;
-                        -webkit-box-orient: vertical;
-                        -webkit-line-clamp: 3;
-                        overflow: hidden;
-                    }
-
-                    .portfolioButton {
-                        background-color: var(--primaryColor);
-                        border-radius: 5px;
-                        border: none;
-                        color: var(--bgColor1);
-                        font-size: $msFont;
-                        padding: 5px 10px;
-                        font-weight: 600;
-                        gap: 5px;
-                    }
                 }
             }
 
@@ -101,10 +100,8 @@
     }
 
     .portfolioCards {
-
         .portfolioCard {
             background-color: var(--bgColor1Light);
-            color: var(--basicWhiteLight);
 
             &:hover {
                 .portfolioData {
@@ -116,12 +113,11 @@
                     }
                 }
             }
-
         }
     }
 }
 
-@media(max-width:800px) {
+@media (max-width: 800px) {
     .portfolio .portfolioCards {
         grid-template-columns: 1fr 1fr;
         gap: 20px;
@@ -133,11 +129,12 @@
     }
 }
 
-@media(max-width:500px) {
+@media (max-width: 500px) {
     .portfolio {
         .portfolioCards {
-            .portfolioCard:hover {
+            .portfolioCard {
                 .portfolioData {
+                    display: flex;
 
                     .portfolioName {
                         font-size: $sFont;
@@ -154,6 +151,10 @@
                         font-size: $xsFont;
                     }
                 }
+
+                // &:hover {
+
+                // }
             }
         }
     }

@@ -1,13 +1,12 @@
 import "./portfolio.scss";
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 
 import portfolio1 from "../../assets/portfolioImgs/portfolio1.png";
 import portfolio2 from "../../assets/portfolioImgs/portfolio2.png";
 import portfolio3 from "../../assets/portfolioImgs/portfolio3.png";
 import portfolio4 from "../../assets/portfolioImgs/portfolio4.png";
 import portfolio5 from "../../assets/portfolioImgs/portfolio5.png";
-import portfolio6 from "../../assets/portfolioImgs/portfolio6.jpg";
-import portfolio7 from "../../assets/portfolioImgs/portfolio7.jpg";
+import portfolio7 from "../../assets/portfolioImgs/portfolio7.png";
 import { BsArrowRight } from "react-icons/bs";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -25,6 +24,18 @@ const portfolioArray = [
     link: "https://rad-bonbon-6b6619.netlify.app/",
   },
   {
+    name: "Mind Game",
+    image: portfolio7,
+    intro: "This game we used to play in our childhood, Must try",
+    link: "https://mindreadinggame.netlify.app",
+  },
+  {
+    name: "My profile Card",
+    image: portfolio5,
+    intro: "Responsive profile card with hover animation",
+    link: "https://abdul-rehman-profilecard.netlify.app",
+  },
+  {
     name: "LandScaper Site",
     image: portfolio3,
     intro: "Basic LandScaper site using HTML & CSS",
@@ -35,17 +46,6 @@ const portfolioArray = [
     image: portfolio2,
     intro: "Basic Mountain Trekking Site using HTML & CSS",
     link: "https://mountain-trekking-basic.netlify.app",
-  },
-  {
-    name: "My profile Card",
-    image: portfolio5,
-    intro: "Responsive profile card with hover animation",
-    link: "https://abdul-rehman-profilecard.netlify.app",
-  },
-  {
-    name: "Hardcoded",
-    image: portfolio6,
-    intro: "Hardcoded",
   },
 ];
 const Portfolio = () => {
@@ -59,7 +59,10 @@ const Portfolio = () => {
       </h1>
       <div className="portfolioCards">
         {portfolioArray.map((ele: any, i: number) => (
-          <div className="portfolioCard flexCenter " data-aos="flip-left">
+          <div
+            className="portfolioCard flexCenter shadowDiv"
+            data-aos="flip-left"
+          >
             <img className="portfolioImage" src={ele.image} />
             <div className="portfolioData flexCenter">
               <h2 className="portfolioName">{ele.name}</h2>

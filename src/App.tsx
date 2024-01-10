@@ -8,12 +8,7 @@ import Testimonial from "./components/testimonial/Testimonial";
 import Experience from "./components/experience/Experience";
 import Portfolio from "./components/portfolio/Portfolio";
 import ContactMe from "./components/contacts/contacts";
-import {
-  BsFillLightbulbFill,
-  BsFillLightbulbOffFill,
-  BsMoon,
-  BsSun,
-} from "react-icons/bs";
+import { BsMoon, BsSun } from "react-icons/bs";
 
 function App() {
   const [lightTheme, setLightTheme] = useState(false);

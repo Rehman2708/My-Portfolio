@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./nameImage.scss";
 import { Link } from "react-scroll";
 import myImage from "../../assets/myImage3.png";
-import myImage1 from "../../assets/myImage2 (2).png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import {
@@ -10,7 +9,6 @@ import {
   BsGithub,
   BsInstagram,
   BsLinkedin,
-  BsMailbox,
   BsWhatsapp,
 } from "react-icons/bs";
 const NameImage = () => {
@@ -19,9 +17,6 @@ const NameImage = () => {
   });
   const [lightTheme, setLightTheme] = useState(false);
 
-  const toggleTheme = () => {
-    setLightTheme(!lightTheme);
-  };
   return (
     <div className="nameImage">
       <div className="myDetailsDiv" data-aos="fade-right">
